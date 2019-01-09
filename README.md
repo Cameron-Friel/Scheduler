@@ -12,6 +12,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+Note that in another window you will need to execute the command ```electron .``` from the root directory in order to run the Electron App.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
