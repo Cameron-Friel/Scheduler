@@ -8,6 +8,12 @@ class App extends Component {
         <div id='horizontal-menu'>
           <div id='menu-title'>Scheduler</div>
         </div>
+
+        <div className='content-window'>
+          <div className='vertical-nav-bar'>
+
+          </div>
+        </div>
       </div>
     );
   }
