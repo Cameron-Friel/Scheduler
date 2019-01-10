@@ -16,6 +16,11 @@ html, body {
   background-color: #233237;
 }
 
+.main-text {
+  font-family: 'ubuntu', sans-serif;
+  color: white;
+}
+
 #horizontal-menu {
   display: flex;
   flex-direction: row;
@@ -41,4 +46,14 @@ html, body {
   padding-top: 10px;
   width: 100px;
   background-color: #18121e;
+}
+
+.list-item {
+  color: #eac67a;
+  text-align: center;
+  padding: 10px;
+}
+
+.list-item:hover {
+  background-color: #984b43;
 }
