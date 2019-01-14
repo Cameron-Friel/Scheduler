@@ -6,7 +6,7 @@ import { updateView } from '../actions';
 class ListItem extends Component {
   /**
     * Checks if a view in the app is already in use or not
-    * @param {string} view - The view the user wishes to see
+    * @param {string} newView - The view the user wishes to see
     * @returns {boolean}
   **/
 
