@@ -16,9 +16,18 @@ html, body {
   background-color: #233237;
 }
 
+.content-container {
+  margin-left: 5px;
+}
+
 .main-text {
   font-family: 'ubuntu', sans-serif;
   color: white;
+}
+
+.button-text {
+  text-align: center;
+  color: #eac67a;
 }
 
 #horizontal-menu {
@@ -56,4 +65,18 @@ html, body {
 
 .list-item:hover {
   background-color: #984b43;
+}
+
+.button-container {
+  background: #984b43;
+  width: 150px;
+  padding: 1px 0;
+  border-radius: 3px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #984b43;
+}
+
+.button-container:hover {
+  border-color: #18121e;
 }
