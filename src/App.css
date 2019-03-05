@@ -20,12 +20,6 @@ html, body {
   margin-left: 5px;
 }
 
-.test {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
 .main-text {
   font-family: 'ubuntu', sans-serif;
   color: white;
