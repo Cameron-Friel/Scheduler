@@ -9,7 +9,7 @@ class Modal extends Component {
     * Closes the add entry modal in the current view
   **/
 
-  closeAddEntryModal = () => {
+  closeModal = () => {
     this.props.setModalFocus(false);
   }
 
@@ -24,7 +24,7 @@ class Modal extends Component {
           <input type='text' name={this.props.inputPlaceholder} placeholder={this.props.inputPlaceholder}></input>
 
           <div className='list'>
-            <AppButton buttonName='Close' clickHandler={() => this.closeAddEntryModal()}></AppButton>
+            <AppButton buttonName='Close' clickHandler={() => this.closeModal()}></AppButton>
             <AppButton buttonName='Submit'></AppButton>
           </div>
         </div>
