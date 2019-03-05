@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { connect } from 'react-redux';
-import { updateView } from '../actions';
 
 class AppButton extends Component {
   render() {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
-import { AppButton } from '../components';
+import { connect } from 'react-redux';
+import { setModalFocus } from '../actions';
+import { AppButton, Modal } from '../components';
 
 class Schedules extends Component {
   /**
@@ -8,27 +10,30 @@ class Schedules extends Component {
   **/
 
   openAddEntryModal = () => {
-
-  }
-
-  /**
-    * Closes the add entry modal in the current view
-  **/
-
-  closeAddEntryModal = () => {
-
+    this.props.setModalFocus(true);
   }
 
   render() {
     return (
-      <div className='container'>
-        <div className='content-container'>
-          <div>Schedule Page</div>
-          <AppButton buttonName='Add Entry' clickHandler={this.openAddEntryModal.bind(this)}></AppButton>
-        </div>  
+      <div className='content-container'>
+        <div>Schedule Page</div>
+        <AppButton buttonName='Add Entry' clickHandler={this.openAddEntryModal.bind(this)}></AppButton>
+
+        <Modal
+          header={'Add Entry'}
+          subHeader={'Enter a title and hit create to make a new task schedule.'}
+          inputTitle={'Task Title'}
+          inputPlaceholder={'Title'}>
+        </Modal>
       </div>
     );
   }
 }
 
-export default Schedules;
+const mapStateToProps = (state) => {
+  return {
+    modalFocus: state.AppReducer.modalFocus,
+  };
+};
+
+export default connect(mapStateToProps, { setModalFocus }) (Schedules);
