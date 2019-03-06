@@ -2,6 +2,11 @@ const electron = require('electron');
 const fs = require('fs');
 const path = require('path');
 
+/**
+  * @class DataStore
+ * The DataStore class contains methods for reading and writing to local storage on a user's device
+*/
+
 class DataStore {
   constructor(options) {
     const dataPath = (electron.app.getPath('userData') || electron.remote.app.getPath('userData'));
