@@ -75,6 +75,7 @@ html, body {
 
 .list-item:hover {
   background-color: #984b43;
+  cursor: pointer;
 }
 
 .button-container {
